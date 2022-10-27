@@ -14,6 +14,7 @@
 		FAC86554290AB440003BDF88 /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC86553290AB440003BDF88 /* FrameworkGridView.swift */; };
 		FAC86558290AD8B5003BDF88 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC86557290AD8B5003BDF88 /* FrameworkDetailView.swift */; };
 		FAC8655A290ADBAF003BDF88 /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC86559290ADBAF003BDF88 /* AFButton.swift */; };
+		FAC8655C290AF275003BDF88 /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8655B290AF275003BDF88 /* FrameworkGridViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		FAC86553290AB440003BDF88 /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
 		FAC86557290AD8B5003BDF88 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
 		FAC86559290ADBAF003BDF88 /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
+		FAC8655B290AF275003BDF88 /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				FAC8654329095816003BDF88 /* Apple_FrameworksApp.swift */,
 				FAC86553290AB440003BDF88 /* FrameworkGridView.swift */,
 				FAC86557290AD8B5003BDF88 /* FrameworkDetailView.swift */,
+				FAC8655B290AF275003BDF88 /* FrameworkGridViewModel.swift */,
 				FAC86559290ADBAF003BDF88 /* AFButton.swift */,
 				FAC86551290AB26E003BDF88 /* Framework.swift */,
 				FAC8654729095818003BDF88 /* Assets.xcassets */,
@@ -151,6 +154,7 @@
 				FAC86552290AB26E003BDF88 /* Framework.swift in Sources */,
 				FAC8655A290ADBAF003BDF88 /* AFButton.swift in Sources */,
 				FAC8654429095816003BDF88 /* Apple_FrameworksApp.swift in Sources */,
+				FAC8655C290AF275003BDF88 /* FrameworkGridViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
