@@ -10,6 +10,7 @@ import SwiftUI
 struct FrameworkDetailView: View {
     
     @Binding var isShowingDetailView: Bool
+    @State private var isShowingSafariView = false
     
     var framework: Framework
     
@@ -18,20 +19,7 @@ struct FrameworkDetailView: View {
         VStack {
             
             // X-button
-            HStack {
-                
-                Spacer()
-                
-                Button {
-                    isShowingDetailView = false
-                } label: {
-                    Image(systemName: "xmark")
-                        .foregroundColor(Color(.label))
-                        .imageScale(.large)
-                        .frame(width: 44, height: 44)
-                }
-            }
-            .padding()
+            XDismissButton(isShowingDetailView: $isShowingDetailView)
             
             Spacer()
             
@@ -47,11 +35,22 @@ struct FrameworkDetailView: View {
             
             // Button to webpage
             Button {
-                
+                isShowingSafariView = true
             } label: {
                 AFButton(title: "Learn More")
             }
+        } // or sheet
+        .fullScreenCover(isPresented: $isShowingSafariView) {
+            SafariView(url: URL(string: framework.urlString)!)
         }
+        //             Alternative way via Link directly to Safari browser
+        //             Link("Learn More", destination: URL(string: framework.urlString)!)
+        //                            .font(.title2)
+        //                            .fontWeight(.semibold)
+        //                            .frame(width: 200, height: 50)
+        //                            .background(Color.red)
+        //                            .foregroundColor(.white)
+        //                            .cornerRadius(10)
     }
 }
 
